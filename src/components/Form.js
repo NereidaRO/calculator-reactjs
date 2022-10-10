@@ -1,9 +1,28 @@
-import Input from "./Input";
-//Cuidado: VS Code quita los paréntesis del return
-//Mira en todos los componentes menos en App
-
-function Form() {
-  return <div className="Form"></div>;
+function Form(props) {
+  return (
+    <form className="Form">
+      <label className="Form__label" for="first">
+        Insert your first number:
+      </label>
+      <input
+        className="Form__input"
+        type="number"
+        name="first"
+        id="first"
+        value={props.firstNumber}
+      />
+      <label className="Form__label" for="second">
+        Insert your second number:
+      </label>
+      <input
+        className="Form__input"
+        type="number"
+        name="second"
+        id="second"
+        value={props.secondNumber}
+      />
+    </form>
+  );
 }
 
 export default Form;

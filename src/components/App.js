@@ -13,9 +13,23 @@ function App() {
   //render
   return (
     <div className="App">
-      <header className="App__header"></header>
-      <main className="App__main"></main>
-      <footer className="App__footer"></footer>
+      <header className="App__header">
+        <Header />
+      </header>
+      <main className="App__main">
+        <Form firstNumber={firstNumber} secondNumber={secondNumber} />
+        <div className="main__wrapper">
+          <Button sign="+" />
+          <Button sign="-" />
+          <Button sign="x" />
+          <Button sign="/" />
+          <Button sign="sq" />
+        </div>
+        <Output result={result} />
+      </main>
+      <footer className="App__footer">
+        <Footer />
+      </footer>
     </div>
   );
 }
