@@ -1,4 +1,5 @@
 import { useState } from "react";
+import arithmetics from "../services/arithmetics.js";
 import Header from "./Header.js";
 import Form from "./Form.js";
 import Button from "./Button.js";
@@ -13,23 +14,18 @@ function App() {
   //render
   return (
     <div className="App">
-      <header className="App__header">
-        <Header />
-      </header>
+      <Header />
       <main className="App__main">
         <Form firstNumber={firstNumber} secondNumber={secondNumber} />
         <div className="main__wrapper">
-          <Button sign="+" />
-          <Button sign="-" />
-          <Button sign="x" />
-          <Button sign="/" />
-          <Button sign="sq" />
+          <Button calculation={arithmetics.addition} sign="+" />
+          <Button calculation={arithmetics.difference} sign="-" />
+          <Button calculation={arithmetics.multiply} sign="x" />
+          <Button calculation={arithmetics.divide} sign="/" />
         </div>
         <Output result={result} />
       </main>
-      <footer className="App__footer">
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }
