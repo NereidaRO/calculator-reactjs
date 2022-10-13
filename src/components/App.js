@@ -18,10 +18,30 @@ function App() {
       <main className="App__main">
         <Form firstNumber={firstNumber} secondNumber={secondNumber} />
         <div className="main__wrapper">
-          <Button calculation={arithmetics.addition} sign="+" />
-          <Button calculation={arithmetics.difference} sign="-" />
-          <Button calculation={arithmetics.multiply} sign="x" />
-          <Button calculation={arithmetics.divide} sign="/" />
+          <Button
+            calculation={arithmetics.addition}
+            sign="+"
+            firstNumber={firstNumber}
+            secondNumber={secondNumber}
+          />
+          <Button
+            calculation={arithmetics.difference}
+            sign="-"
+            firstNumber={firstNumber}
+            secondNumber={secondNumber}
+          />
+          <Button
+            calculation={arithmetics.multiply}
+            sign="x"
+            firstNumber={firstNumber}
+            secondNumber={secondNumber}
+          />
+          <Button
+            calculation={arithmetics.divide}
+            sign="/"
+            firstNumber={firstNumber}
+            secondNumber={secondNumber}
+          />
         </div>
         <Output result={result} />
       </main>
