@@ -1,8 +1,10 @@
 function Button(props) {
   const handleClick = (ev) => {
     ev.preventDefault();
-    const total = props.firstNumber + props.secondNumber;
-    return total;
+    const a = props.firstNumber;
+    const b = props.secondNumber;
+    const userResult = props.calculation(a, b);
+    props.handleResult(userResult);
   };
 
   return (
