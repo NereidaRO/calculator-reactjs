@@ -1,3 +1,5 @@
+import "../styles/layout/Button.scss";
+
 function Button(props) {
   const handleClick = (ev) => {
     ev.preventDefault();

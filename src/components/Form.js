@@ -1,3 +1,5 @@
+import "../styles/layout/Form.scss";
+
 function Form(props) {
   //events
   const handleValueOne = (ev) => {

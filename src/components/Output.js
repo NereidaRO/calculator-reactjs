@@ -1,3 +1,5 @@
+import "../styles/layout/Output.scss";
+
 function Output(props) {
   return (
     <div className="Output">
