@@ -10,11 +10,9 @@ function Button(props) {
   };
 
   return (
-    <div className="Button">
-      <button className="Button__button" onClick={handleClick}>
+      <button className="Button" onClick={handleClick}>
         {props.sign}
       </button>
-    </div>
   );
 }
 

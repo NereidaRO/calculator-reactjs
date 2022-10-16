@@ -1,4 +1,13 @@
 @import "../core/reset.scss";
 @import "../core/var.scss";
 
-//font-family: 'Roboto', sans-serif;
+.App {
+    font-family: 'Roboto', sans-serif;
+    margin: $margin;
+}
+
+.main__wrapper {
+    margin-bottom: $margin;
+    display: flex;
+    justify-content: space-evenly;
+}
