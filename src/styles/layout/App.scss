@@ -3,11 +3,19 @@
 
 .App {
     font-family: 'Roboto', sans-serif;
-    margin: $margin;
+    color: $principal-color;
+    padding: $central-col;
+    // background: radial-gradient(ellipse farthest-corner, white, $secondary-color 50%, white);
 }
 
 .main__wrapper {
     margin-bottom: $margin;
     display: flex;
     justify-content: space-evenly;
+}
+
+@media all and(min-width: 768px) {
+    .main__wrapper {
+        justify-content: center;
+    }
 }

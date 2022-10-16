@@ -8,6 +8,7 @@ function Footer() {
       <a className="Footer__link" href="https://github.com/NereidaRO" target="_blank" rel="noreferrer" >
         by @NereidaRO
       </a>
+      <p className="Footer__paragraph">October, 2022</p>
     </footer>
   );
 }

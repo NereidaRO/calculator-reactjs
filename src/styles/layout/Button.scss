@@ -1,2 +1,8 @@
 @import "../core/reset.scss";
 @import "../core/var.scss";
+
+@media all and(min-width: 768px) {
+    .Button {
+        margin: 0% $margin;
+    }
+}

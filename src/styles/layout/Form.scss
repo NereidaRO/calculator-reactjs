@@ -9,4 +9,8 @@
     &__label {
         margin: $margin-label 0%;
     }
+
+    &__input {
+        max-width: 360px;
+    }
 }
