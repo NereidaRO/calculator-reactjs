@@ -15,25 +15,21 @@ function Form(props) {
   //render
   return (
     <form className="Form">
-      <label className="Form__label" for="first">
-        Insert your first number:
-      </label>
       <input
         className="Form__input"
         type="number"
         name="first"
         id="first"
+        placeholder="Insert your first number"
         value={props.firstNumber}
         onChange={handleValueOne}
       />
-      <label className="Form__label" for="second">
-        Insert your second number:
-      </label>
       <input
         className="Form__input"
         type="number"
         name="second"
         id="second"
+        placeholder="Insert your second number"
         value={props.secondNumber}
         onChange={handleValueTwo}
       />

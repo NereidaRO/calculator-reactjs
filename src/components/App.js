@@ -8,8 +8,8 @@ import Footer from "./Footer";
 
 function App() {
   //states
-  const [firstNumber, setFirstNumber] = useState(0);
-  const [secondNumber, setSecondNumber] = useState(0);
+  const [firstNumber, setFirstNumber] = useState();
+  const [secondNumber, setSecondNumber] = useState();
   const [result, setResult] = useState(0);
 
   //lifting
@@ -47,6 +47,7 @@ function App() {
     <div className="App">
       <Header />
       <main className="App__main">
+        <Output result={result} />
         <Form
           firstNumber={firstNumber}
           secondNumber={secondNumber}
@@ -84,7 +85,6 @@ function App() {
             handleResult={handleResult}
           />
         </div>
-        <Output result={result} />
       </main>
       <Footer />
     </div>

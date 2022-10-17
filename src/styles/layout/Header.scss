@@ -6,14 +6,5 @@
     background-image: url("../../images/cat-alex.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &__title {
-        font-size: $big;
-        color: $terciary-color;
-        font-weight: bold;
-    }
+    background-position: bottom;
 }

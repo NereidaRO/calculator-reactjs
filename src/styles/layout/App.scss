@@ -4,8 +4,17 @@
 .App {
     font-family: 'Roboto', sans-serif;
     color: $principal-color;
-    padding: $central-col;
-    // background: radial-gradient(ellipse farthest-corner, white, $secondary-color 50%, white);
+    background-color: black;
+    min-height: 100vh;
+
+    &__main {
+        margin: $central-col;
+        background-color: white;
+        height: 55vh;
+        padding: $main-padding;
+        border-radius: $round-border;
+        ;
+    }
 }
 
 .main__wrapper {

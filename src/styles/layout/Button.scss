@@ -4,5 +4,6 @@
 @media all and(min-width: 768px) {
     .Button {
         margin: 0% $margin;
+        border-radius: $round-border;
     }
 }
