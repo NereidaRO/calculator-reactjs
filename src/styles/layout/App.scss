@@ -7,7 +7,7 @@
     min-height: 100vh;
 
     &__main {
-        margin: $central-col;
+        margin: $main-padding $central-col ;
         background-color: $calculator;
         height: 55vh;
         padding: $main-padding;
