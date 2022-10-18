@@ -54,7 +54,7 @@ function App() {
           handleValueOne={handleValueOne}
           handleValueTwo={handleValueTwo}
         />
-        <div className="main__wrapper">
+        <div className="main__wrapper--bt">
           <Button
             calculation={addition}
             sign="+"

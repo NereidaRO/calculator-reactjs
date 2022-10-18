@@ -1,9 +1,16 @@
 @import "../core/reset.scss";
 @import "../core/var.scss";
 
-@media all and(min-width: 768px) {
-    .Button {
-        margin: 0% $margin;
-        border-radius: $round-border;
+.Button {
+    margin: 0% $margin;
+    border-radius: $round-input;
+    border-color: $border;
+    background-color: $button;
+    color: $button-text;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $button-text;
+        color: $button;
     }
 }

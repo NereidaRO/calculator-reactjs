@@ -7,7 +7,10 @@
     flex-direction: column;
 
     &__input {
+        margin: $margin 0;
         max-width: 360px;
+        border-color: $border;
         border-radius: $round-input;
+        background-color: $background-input;
     }
 }

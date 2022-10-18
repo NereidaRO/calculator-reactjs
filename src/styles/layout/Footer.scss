@@ -3,5 +3,16 @@
 
 .Footer {
     margin-top: $margin;
+    padding: $margin-label;
+    display: flex;
+    justify-content: space-between;
 
+    &__link {
+        text-decoration: none;
+        color: $text;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }

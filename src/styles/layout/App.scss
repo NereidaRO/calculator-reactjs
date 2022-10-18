@@ -3,24 +3,23 @@
 
 .App {
     font-family: 'Roboto', sans-serif;
-    color: $principal-color;
-    background-color: black;
+    background-color: $background;
     min-height: 100vh;
 
     &__main {
         margin: $central-col;
-        background-color: white;
+        background-color: $calculator;
         height: 55vh;
         padding: $main-padding;
         border-radius: $round-border;
-        ;
     }
 }
 
-.main__wrapper {
-    margin-bottom: $margin;
+.main__wrapper--bt {
+    margin: $central-col $margin;
     display: flex;
     justify-content: space-evenly;
+
 }
 
 @media all and(min-width: 768px) {

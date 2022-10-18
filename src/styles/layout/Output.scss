@@ -1,2 +1,23 @@
 @import "../core/reset.scss";
 @import "../core/var.scss";
+
+.Output {
+    &__title {
+        font-weight: 900;
+        font-size: $big;
+        text-align: center;
+        padding-bottom: $main-padding;
+        color: $title;
+    }
+
+    &__paragraph {
+        color: $text;
+        margin: $central-col 0;
+        background-color: $background-result;
+        border: solid 1px $border;
+        border-radius: $round-input;
+        text-align: center;
+        line-height: 400%;
+        height: 10vh;
+    }
+}
