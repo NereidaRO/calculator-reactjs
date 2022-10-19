@@ -8,6 +8,11 @@
         text-align: center;
         padding: $main-padding 0;
         color: $title;
+
+        @media all and (min-width: 1100px) {
+            padding-top: 0;
+        }
+
     }
 
     &__paragraph {
@@ -19,5 +24,17 @@
         text-align: center;
         line-height: 400%;
         height: 10vh;
+
+        @media all and (min-width: 810px) {
+            margin: $margin-tablet 0;
+            font-size: $medium;
+            line-height: 350%;
+        }
+
+        @media all and (min-width: 1100px) {
+            margin: 0;
+            font-size: $big;
+            line-height: 275%;
+        }
     }
 }

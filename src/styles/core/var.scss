@@ -1,4 +1,4 @@
-//separations, etc.
+//mobile
 $margin: 2.5%;
 $margin-label: 3%;
 $central-col: 10%;
@@ -6,8 +6,19 @@ $main-padding: 5%;
 $round-border: 15px;
 $round-input: 7px;
 
-//colors
 
+//tablet (810px)
+/*@media all and (min-width: 810px) {
+  }*/
+$margin-tablet: 6%;
+
+
+//desktop (1100px)
+/*@media all and (min-width: 1100px) {
+}*/
+$margin-desktop: 3%;
+
+//colors
 $background: #f5f5ef;
 $calculator: #e8c39e;
 $button: #b08e6b;
@@ -21,6 +32,7 @@ $click-me: rgb(208, 138, 9);
 
 //font-sizes
 $big: 1.75rem; //28px
+$medium: 1.5rem; //24px
 $standard: 1rem; //16px
 $small: 0.75rem; //12px
 $details: 0.625rem; //10px
