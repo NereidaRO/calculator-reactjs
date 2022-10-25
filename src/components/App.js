@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import "../styles/layout/App.scss";
 import Header from "./Header.js";
 import Form from "./Form.js";
@@ -45,48 +46,58 @@ function App() {
   //render
   return (
     <div className="App">
-      <Header />
-      <main className="App__main">
-        <Output result={result} />
-        <Form
-          firstNumber={firstNumber}
-          secondNumber={secondNumber}
-          handleValueOne={handleValueOne}
-          handleValueTwo={handleValueTwo}
-        />
-        <div className="main__wrapper--bt">
-          <Button
-            calculation={addition}
-            sign="+"
-            firstNumber={firstNumber}
-            secondNumber={secondNumber}
-            handleResult={handleResult}
-          />
+      {" "}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <main className="App__main">
+                <Output result={result} />
+                <Form
+                  firstNumber={firstNumber}
+                  secondNumber={secondNumber}
+                  handleValueOne={handleValueOne}
+                  handleValueTwo={handleValueTwo}
+                />
+                <div className="main__wrapper--bt">
+                  <Button
+                    calculation={addition}
+                    sign="+"
+                    firstNumber={firstNumber}
+                    secondNumber={secondNumber}
+                    handleResult={handleResult}
+                  />
 
-          <Button
-            calculation={difference}
-            sign="-"
-            firstNumber={firstNumber}
-            secondNumber={secondNumber}
-            handleResult={handleResult}
-          />
-          <Button
-            calculation={multiplication}
-            sign="x"
-            firstNumber={firstNumber}
-            secondNumber={secondNumber}
-            handleResult={handleResult}
-          />
-          <Button
-            calculation={division}
-            sign="/"
-            firstNumber={firstNumber}
-            secondNumber={secondNumber}
-            handleResult={handleResult}
-          />
-        </div>
-      </main>
-      <Footer />
+                  <Button
+                    calculation={difference}
+                    sign="-"
+                    firstNumber={firstNumber}
+                    secondNumber={secondNumber}
+                    handleResult={handleResult}
+                  />
+                  <Button
+                    calculation={multiplication}
+                    sign="x"
+                    firstNumber={firstNumber}
+                    secondNumber={secondNumber}
+                    handleResult={handleResult}
+                  />
+                  <Button
+                    calculation={division}
+                    sign="/"
+                    firstNumber={firstNumber}
+                    secondNumber={secondNumber}
+                    handleResult={handleResult}
+                  />
+                </div>
+              </main>
+              <Footer />
+            </>
+          }
+        />
+      </Routes>
     </div>
   );
 }
