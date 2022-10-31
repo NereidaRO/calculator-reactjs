@@ -7,6 +7,9 @@
     border-color: $border;
     background-color: $button;
     color: $button-text;
+    font-size: $medium;
+    min-height: 50px;
+    min-width: 50px;
 
     &:hover {
         cursor: pointer;
